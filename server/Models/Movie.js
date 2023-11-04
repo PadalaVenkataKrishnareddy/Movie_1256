@@ -16,6 +16,10 @@ const movieSchema = new mongoose.Schema({
   poster: {
     type: String,
     required: true
+  },
+  review:{
+    type:String,
+    required: true
   }
 });
 

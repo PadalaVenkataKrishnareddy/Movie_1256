@@ -1,0 +1,145 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+/* Center-align the submission form */
+.movie-form {
+    background-image: url(./img/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the form */
+    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align form to the left */
+    align-items: center;
+}
+
+/* Form styling */
+.movie-form form {
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Adjust as needed for spacing */
+}
+
+/* Form label styling */
+.movie-form form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form input and select styling */
+.movie-form form input[type='text'],
+.movie-form form input[type='number'],
+.movie-form form select#review,
+.movie-form form input[type='file'] {
+    color: #333;
+    background: none;
+    margin-top: 8px;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    box-shadow: -3px -3px 9px rgba(0, 0, 0, 0.2),
+                3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+/* .movie-form form button[type='submit'],
+.movie-form button[type='button'] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.movie-form form button[type='submit']:hover,
+.movie-form button[type='button']:hover {
+    background-color: #0056b3;
+    margin-top: 20px; 
+} */
+.movie-form button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add margin to create space below the form */
+}
+
+/* Movie card styling */
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+/* Movie card image styling */
+.movie-card__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Movie card info styling */
+.movie-card__info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #dad8d8;
+    color: #333;
+}
+
+/* Movie card title styling */
+.movie-card__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Movie card genre and release year styling */
+.movie-card__genre,
+.movie-card__release-year {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* Movie list styling */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(180deg, #bee6f9 50%, #d7cdcd 100%);
+    margin-top: 2rem;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .movie-form {
+        /* Adjust styles for smaller screens */
+    }
+
+    .movie-card {
+        /* Adjust styles for smaller screens */
+    }
+}
